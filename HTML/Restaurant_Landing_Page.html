@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../SCSS/Restaurant_Landing_Page.css">
+    <title>Restaurant Landing Page</title>
+</head>
+<body>
+    <header>
+        <article> 
+            <section>
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/logo.png" alt="" width="40px">
+                    <figcaption>
+                        <a href="#"><h3>Sushi</h3></a>
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <nav>
+                    <ul class="Navigation">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About Us</a></li>
+                        <li><a href="#PopularDishes">Popular Dishes</a></li>
+                        <li><a href="#RecentlyAdded">Recently Added</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <figure>
+                    <i id="Bars" class="fa-solid fa-bars"></i>
+                </figure>
+            </section>
+        </article>
+    </header>
+    <main>
+        <article id="Home" class="Home">
+            <section>
+                <h1>Enjoy Delicious <br> <span><img src="../Images/Restaurant_Landing_Page/home-sushi-title.png" alt="" width="50px"></span> Sushi Food</h1>
+                <p>Enjoy a good dinner with the best dishes in the restaurant and improve your day.</p>
+                <button>Order Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+            </section>
+            <section>
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/home-sushi-rolls.png" alt="" width="500px">
+                </figure>
+            </section>
+        </article>
+        <article id="About" class="About">
+            <section data-aos="fade-right" data-aos-easing="linear"data-aos-duration="1500">
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/about-sushi.png" alt="" width="460px">
+                </figure>
+            </section>
+            <section data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                <h3>About Us</h3>
+                <h2>We provide <span><img src="../Images/Restaurant_Landing_Page/about-sushi-title.png" alt="" width="40px"></span> <br>  healthy food</h2>
+                <p>
+                    Food for us comes from our relatives, whether they have wings or fins or roots. That is how we consider food. Food has a culture. It has a history. It has a story. It has relationships.
+                </p>
+            </section>
+        </article>
+        <article id="PopularDishes" class="PopularDishes">
+            <section>
+                <h3>The Best Food</h3>
+                <h2>Popular Dishes</h2>
+            </section>
+            <section class="Dishes" data-aos="fade-down"  data-aos-easing="linear"data-aos-duration="2000">
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/popular-onigiri.png" alt="" width="200px" >
+                    <figcaption>
+                        <h3 class="foodProduct">Onigiri</h3>
+                        <p>Japanese Dish</p>
+                        <div>
+                            <h3 class="Price">$10.99</h3>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/popular-spring-rols.png" alt="" width="200px" >
+                    <figcaption>
+                        <h3 class="foodProduct">Spring Rolls</h3>
+                        <p>Japanese Dish</p>
+                        <div>
+                            <h3 class="Price">$15.99</h3>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/popular-sushi-rolls.png" alt="" width="200px" >
+                    <figcaption>
+                        <h3 class="foodProduct">Sushi Rolls</h3>
+                        <p>Japanese Dish</p>
+                        <div>
+                            <h3 class="Price">$19.99</h3>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+            </section>
+        </article>
+        <article id="RecentlyAdded" class="RecentlyAdded">
+            <section data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="1500">
+                <h3>Recently Added</h3>
+                <h2>Sushi Samurai <br> Salmon Cheese</h2>
+                <p>
+                    Food, in the end, in our own tradition, is something holy. It’s not about nutrients and calories. It’s about sharing. It’s about honesty. It’s about identity.
+                </p>
+                <button>Order Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+            </section>
+            <section data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="1500" >
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/recently-salmon-sushi.png" alt="" width="500px">
+                </figure>
+            </section>
+        </article> 
+        <article id="Newsletter" class="Newsletter" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1500" >
+            <section>
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/newsletter-sushi.png" alt="" width="300px">
+                </figure>
+            </section>
+            <section>
+                <h3>Newsletter</h3>
+                <h2>Subscribe for <br> offer updates</h2>
+                <form action="">
+                    <input type="email" placeholder="Enter Email Adress... ">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <article>
+            <section class="Sushi">
+                <figure>
+                    <img src="../Images/Restaurant_Landing_Page/logo.png" alt="" width="30px" height="25px">
+                    <h3>Sushi</h3>
+                </figure>
+                <p>
+                    Food is as much about the moment, the occasion, the location, and the company as it is about the taste.
+                </p>
+            </section>
+            <section>
+                <h3>Main Menu</h3>
+                <nav>
+                    <ul class="Menu">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Popular Dishes</li>
+                        <li>Recently Added</li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h3>Information</h3>
+                <ul>
+                    <li>Contact</li>
+                    <li>Order & Return</li>
+                    <li>Videos</li>
+                    <li> Reservation</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Address</h3>
+                <p>
+                    2416 Mapleview Drive Tampa, FL 33634
+                </p>
+            </section>
+            <section>
+                <h3>Follow Us</h3>
+                <ul class="socialNetwork">
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </footer>
+</body >
+<script src="../JS/Restaurant_Landing_Page.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

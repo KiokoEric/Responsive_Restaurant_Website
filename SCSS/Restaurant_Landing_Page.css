@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Rosario:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(19, 100%, 96%);
+  color: black;
+  font-family: "Rosario", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: hsl(19, 64%, 52%);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: "Rosario", sans-serif;
+  padding: 0.8rem 1.2rem;
+  transition: all 0.4s linear;
+}
+
+button i {
+  margin-left: 0.5rem;
+}
+
+button i:hover {
+  transform: translateX(25%);
+}
+
+header {
+  background: inherit;
+  box-shadow: 0px 1px 100px 10px white;
+  margin-bottom: 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0.6rem 0rem;
+  width: 900px;
+}
+header article figure {
+  display: flex;
+  flex-direction: row;
+}
+header article figure img {
+  margin-right: 0.5rem;
+}
+header article figure h3 {
+  font-family: "Lora", serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+header article ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+header article li {
+  list-style-type: none;
+  margin-right: 2rem;
+}
+header article a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+header article a:hover {
+  color: hsl(19, 64%, 54%);
+}
+header #Bars {
+  display: none;
+}
+
+.Home {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin: auto;
+  margin-top: 20rem;
+  margin-bottom: 12rem;
+  width: 900px;
+}
+.Home h1 {
+  color: hsl(19, 16%, 15%);
+  font-family: "Lora", serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.Home p {
+  margin-bottom: 1.5rem;
+  width: 300px;
+}
+
+.About {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  margin: auto;
+  margin-bottom: 8rem;
+  width: 900px;
+}
+.About h3 {
+  color: hsl(19, 64%, 52%);
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.About h2 {
+  color: hsl(19, 16%, 15%);
+  font-family: "Lora", serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.PopularDishes {
+  margin: auto;
+  margin-bottom: 8rem;
+  width: 900px;
+}
+.PopularDishes h3 {
+  color: hsl(19, 64%, 52%);
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.PopularDishes h2 {
+  color: hsl(19, 16%, 15%);
+  font-family: "Lora", serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.PopularDishes .Dishes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.PopularDishes .Dishes figure {
+  background-color: hsl(19, 100%, 97%);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  text-align: center;
+  width: 265px;
+}
+.PopularDishes .Dishes figure img {
+  transition: all 0.4s linear;
+}
+.PopularDishes .Dishes figure img:hover {
+  transform: translateY(-10%);
+}
+.PopularDishes .Dishes figure .foodProduct {
+  color: hsl(19, 16%, 15%);
+  font-family: "Lora", serif;
+  font-style: normal;
+}
+.PopularDishes .Dishes figure div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 220px;
+}
+.PopularDishes .Dishes figure div h3 {
+  font-family: "Lora", serif;
+}
+.PopularDishes .Dishes figure div i {
+  background-color: hsl(19, 64%, 52%);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 0.35rem;
+  padding: 0.4rem 0.4rem;
+  transition: all 0.3s linear;
+  width: 30px;
+}
+.PopularDishes .Dishes figure div i:hover {
+  transform: translateY(-20%);
+}
+
+.RecentlyAdded {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  margin: auto;
+  margin-bottom: 8rem;
+  width: 900px;
+}
+.RecentlyAdded h3 {
+  color: hsl(19, 64%, 52%);
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.RecentlyAdded h2 {
+  color: hsl(19, 16%, 15%);
+  font-family: "Lora", serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+.RecentlyAdded p {
+  margin-bottom: 1.8rem;
+}
+
+.Newsletter {
+  background-color: hsl(19, 16%, 15%);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+  margin: auto;
+  margin-bottom: 10rem;
+  padding: 3rem 2.5rem;
+  width: 900px;
+}
+.Newsletter h3 {
+  color: hsl(19, 64%, 52%);
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.Newsletter h2 {
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+.Newsletter form {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.8rem;
+  width: 350px;
+}
+.Newsletter form input {
+  border: none;
+  height: 40px;
+  margin-right: 0.5rem;
+  width: 290px;
+}
+.Newsletter form input[type=email] {
+  border: none;
+  font-family: "Rosario", sans-serif;
+  font-size: 16px;
+  padding-left: 1rem;
+}
+.Newsletter form input::-moz-placeholder {
+  font-family: "Rosario", sans-serif;
+  font-size: 16px;
+}
+.Newsletter form input::placeholder {
+  font-family: "Rosario", sans-serif;
+  font-size: 16px;
+}
+
+footer {
+  margin: auto;
+  margin-bottom: 4rem;
+  width: 900px;
+}
+footer article {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+footer section {
+  width: 250px;
+}
+footer .Sushi {
+  width: 450px;
+}
+footer h3 {
+  font-family: "Rosario", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+footer figure {
+  display: flex;
+  flex-direction: row;
+}
+footer figure img {
+  margin-right: 0.5rem;
+}
+footer li {
+  cursor: pointer;
+  list-style-type: none;
+  line-height: 2rem;
+}
+footer li:hover {
+  color: hsl(19, 64%, 54%);
+}
+footer p {
+  line-height: 1.5rem;
+}
+footer .socialNetwork {
+  display: flex;
+  flex-direction: row;
+}
+footer .socialNetwork li {
+  margin-right: 1rem;
+}
+footer .socialNetwork li i {
+  cursor: pointer;
+  font-size: 20px;
+}
+footer .socialNetwork li i:hover {
+  color: hsl(19, 64%, 54%);
+}/*# sourceMappingURL=Restaurant_Landing_Page.css.map */

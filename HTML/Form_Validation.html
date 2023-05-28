@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Form_Validation.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <article>
+        <form action="">
+            <section>
+                <label for="">Full Name</label>
+                <input type="text" name="" id="fullName" placeholder="FullName" onkeydown="validatename()">
+                <span id="nameError" ></span>
+            </section>
+            <section>
+                <label for="">Phone Number</label>
+                <input type="text" name="" id="phoneNumber" placeholder="Phone Number" >
+                <span id="phoneError" ></span>
+            </section>
+            <section>
+                <label for="">Email Address</label>
+                <input type="email" name="" id="emailAddress" placeholder="Email Address" >
+                <span id="emailError" ></span>
+            </section>
+            <section>
+                <label for="">Your Message</label>
+                <textarea name="" id="" cols="30" rows="10">
+                    Your Message
+                </textarea>
+            </section>
+            <section>
+                <button class="Button" type="submit">Submit</button>
+            </section>
+        </form>
+    </article>
+</body>
+<script src="../JS/Form_Validation.js"></script>
+</html>

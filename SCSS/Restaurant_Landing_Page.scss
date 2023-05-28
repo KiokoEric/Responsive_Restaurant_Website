@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Rosario:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+// COLORS
+
+$First-color: hsl(19, 64%, 54%);
+$First-color-alt: hsl(19, 64%, 52%);
+$Title-color: hsl(19, 16%, 15%);
+$Text-color: hsl(19, 16%, 35%);
+$Text-color-light: hsl(19, 8%, 55%);
+$Body-color: hsl(19, 100%, 96%);
+$Container-color: hsl(19, 100%, 97%);
+
+
+// FONT SIZE
+
+$H1: 50px;
+$H2: 40px;
+$H3: 28px;
+
+
+body {
+    background-color: $Body-color;
+    color: black;
+    font-family: 'Rosario', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    background-color: $First-color-alt;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Rosario', sans-serif;
+    padding: 0.8rem 1.2rem;
+    transition: all 0.4s linear;
+}
+button i {
+    margin-left: 0.5rem;
+}
+button i:hover {
+    transform: translateX(25%)
+}
+
+                // HEADER SECTION 
+
+header {
+    background: inherit;
+    box-shadow: 0px 1px 100px 10px lighten($Container-color, 60%) ;
+    margin-bottom: 10rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0.6rem 0rem;
+        width: 900px;
+
+        figure {
+            display: flex;
+            flex-direction: row;
+
+            img {
+                margin-right: 0.5rem;
+            }
+            h3 {
+                font-family: 'Lora', serif;
+                font-size: $H3;
+                font-weight: 600;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0.5rem;
+        }
+        li {
+            list-style-type: none;
+            margin-right: 2rem;
+        }
+        a {
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $First-color;
+        }
+    }
+    #Bars {
+        display: none;
+    }
+}
+
+                // HOME SECTION
+
+
+.Home {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin: auto;
+    margin-top: 20rem;
+    margin-bottom: 12rem;
+    width: 900px;
+
+    h1 {
+        color: $Title-color;
+        font-family: 'Lora', serif;
+        font-size: $H1;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        margin-bottom: 1.5rem;
+        width: 300px;
+    }
+}
+
+                // ABOUT US SECTION
+
+.About {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    margin: auto;
+    margin-bottom: 8rem;
+    width: 900px;
+
+    h3 {
+        color: $First-color-alt;
+        font-family: 'Dancing Script', cursive;
+        font-size: $H3;
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        color: $Title-color;
+        font-family: 'Lora', serif;
+        font-size: $H2;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-transform: capitalize;
+    }
+}
+
+                // POPULAR DISHES SECTION
+
+.PopularDishes {
+    margin: auto;
+    margin-bottom: 8rem;
+    width: 900px;
+
+    h3 {
+        color: $First-color-alt;
+        font-family: 'Dancing Script', cursive;
+        font-size: $H3;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        color: $Title-color;
+        font-family: 'Lora', serif;
+        font-size: $H2;
+        font-weight: 600;
+        margin-bottom: 4rem;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .Dishes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 2rem;
+
+        figure {
+            background-color: $Container-color;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            text-align: center;
+            width: 265px;
+
+            img{
+                transition: all 0.4s linear;
+            }
+
+            img:hover {
+                transform: translateY(-10%);
+            }
+
+            .foodProduct {
+                color: $Title-color;
+                font-family: 'Lora', serif;
+                font-style: normal;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 1rem;
+                width: 220px;
+
+                h3 {
+                    font-family: 'Lora', serif;
+                }
+
+                i {
+                    background-color: $First-color-alt;
+                    border-radius: 50%;
+                    color: white;
+                    cursor: pointer;
+                    height: 30px;
+                    margin-top: 0.35rem;
+                    padding: 0.4rem 0.4rem;
+                    transition: all 0.3s linear;
+                    width: 30px;
+                }
+                i:hover {
+                    transform: translateY(-20%);
+                }
+            }
+        }
+    }
+}
+
+                // RECENTLY ADDED SECTION
+
+.RecentlyAdded {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    margin: auto;
+    margin-bottom: 8rem;
+    width: 900px;
+
+    h3 {
+        color: $First-color-alt;
+        font-family: 'Dancing Script', cursive;
+        font-size: $H3;
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+    }
+
+    h2 {
+        color: $Title-color;
+        font-family: 'Lora', serif;
+        font-size: $H2;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-transform: capitalize;
+    }
+    p {
+        margin-bottom: 1.8rem;
+    }
+}
+
+                // NEWSLETTER SECTION
+
+.Newsletter {
+    background-color: $Title-color;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    padding: 3rem 2.5rem;
+    width: 900px;
+
+    h3 {
+        color: $First-color-alt;
+        font-family: 'Dancing Script', cursive;
+        font-size: $H3;
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+    }
+
+    h2 {
+        color: white;
+        font-family: 'Lora', serif;
+        font-size: $H2;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        padding: 0.3rem 0.3rem 0.3rem 0.8rem;
+        width: 350px;
+
+        input {
+            border: none;
+            height: 40px;
+            margin-right: 0.5rem;
+            width: 290px;
+        }
+        input[type="email"] {
+            border: none;
+            font-family: 'Rosario', sans-serif;
+            font-size: 16px;
+            padding-left: 1rem;
+        }
+        input::placeholder {
+            font-family: 'Rosario', sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+
+                // FOOTER SECTION
+
+footer {
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 900px;
+
+    article {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+    section {
+        width: 250px;
+    }
+    .Sushi {
+        width: 450px;
+    }
+    h3 {
+        font-family: 'Rosario', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+    }
+    figure {
+        display: flex;
+        flex-direction: row;
+
+        img {
+            margin-right: 0.5rem;
+        }
+    }
+    li {
+        cursor: pointer;
+        list-style-type: none;
+        line-height: 2rem;
+    }
+    li:hover {
+        color: $First-color;
+    }
+    p {
+        line-height: 1.5rem;
+    }
+    .socialNetwork {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin-right: 1rem;
+
+            i {
+                cursor: pointer;
+                font-size: 20px;
+            }
+            i:hover {
+                color: $First-color;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    
+}
